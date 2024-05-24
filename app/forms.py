@@ -12,7 +12,7 @@ class WebpageForm(forms.ModelForm):
         model = Webpage
         #fields = '__all__'  
         #inorder to inlcude specific fields we use list of columns we need to include or we can go for exclude
-        fields = ['topic_name','name','name','url'] # same as exclude = ['url']
+        fields = ['topic_name','name','name','url'] # same as exclude = ['email']
         help_texts ={'topic_name':'should not be integrs','name':'only Alphabets'}
         labels = {'topic_name':'Topic','name':'Name'} # label for input elements
         widgets = {'url':forms.PasswordInput,'name':forms.Textarea}
